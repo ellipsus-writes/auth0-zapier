@@ -15,6 +15,9 @@ const perform = (z, bundle) => {
       password: bundle.inputData.password,
       connection: "email",
       email_verified: true,
+      user_metadata: {
+        invitation_source: "waitlist",
+      },
     },
   };
 
